@@ -20,7 +20,7 @@ Criando nosso primeiro código em HTML
 Estamos utilizando no curso o Eclipse como IDE, então vamos criar o nosso primeiro projeto utilizando a IDE.
 Nosso primeiro projeto se chamará projeto1, depois que criarmos o projeto1, dentro dele vamos criar um arquivo chamado index.html 
 com o seguinte código:
-
+~~~html
 	<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 	<html>
 		<head>
@@ -33,10 +33,10 @@ com o seguinte código:
 		Aqui é o corpo do seu html
 	</body>	
 	</html>
-	
+~~~	
 Esse é o nosso primeiro código em HTML, uma liguagem de marcação de texto.
 Agora vamos criar nosso primeiro formulário em HTML utilizando o método post que foi dito em aula com o seguinte código:
-
+~~~html
 	<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 	<html>
 		<head>
@@ -53,14 +53,14 @@ Agora vamos criar nosso primeiro formulário em HTML utilizando o método post q
 		</form>
 	</body>	
 	</html>	
-	
+~~~	
 Para recuperar esses dados via PHP, vamos criar um arquivo em nosso projeto chamado dados.php e nele vamos
 colocar o seguinte código:
-
+~~~php
 	<?php
 	$pegarNome = $_POST['nome'];
 	echo $pegarNome;
-
+~~~
 Com isso todas as vezes que você submeter o seu formulário poderemos recuperar o parametro "nome" que foi definido em nosso campo
 input text.
 
@@ -72,7 +72,7 @@ dados em nosso sistema.
 Relembrando a nossa aula, temos que ficar ciente de que em PHP as variáveis começam com o caracter $ seguindo de alguma letra ou _
 se tentarmos depois do cifrão colocar um número o PHP vai dar um erro.
 Vamos relembrar vendo nosso arquivo de variaveis.php
-
+~~~php
 	<?php
 	/**
 	 * @desc Manipulando variáveis
@@ -98,10 +98,10 @@ Vamos relembrar vendo nosso arquivo de variaveis.php
 	//Essa linha abaixo daria erro, pois o php não permite que você crie uma variável
 	//iniciando com um número.
 	//$5oi = "1";
-	
+~~~	
 Variáveis podem possuir apenas um valor para cada variável, por isso temos algo em PHP chamado array, que seriam vetores e matrizes pelo
 qual podemos manipular grandes quantidades de dados, vamos relembrar com o seguinte código abaixo:
-
+~~~php
 	<?php
 	/**
 	* @desc Declaração de Arrays
@@ -153,5 +153,5 @@ qual podemos manipular grandes quantidades de dados, vamos relembrar com o segui
 	echo "<pre>";
 	print_r($matriz2);
 	echo "</pre>";	
-	
+~~~	
 	
