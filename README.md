@@ -138,7 +138,7 @@ if ( $operacoes == "+" ) {
 	echo "O valor dessa operação é {$resultado}" ;
 }
 
-~~
+~~~
 
 Muito simples né, nossa estrutura de condição com o if é muito simples, mas quando tempo uma grande quantidade
 de condições podemos utilzar o switch case, relembre a sintaxe abaixo:
