@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title>Calculadora</title>
+	</head>
+	<body>
+		<form action="arquivoPHP/calcular.php" method="post">
+			<label>Primeiro Valor</label>
+			<input type="text" name="primeiroValor" /> 
+			<label>Segundo Valor</label>
+			<input type="text" name="segundoValor" /> 
+			<select name="operacoes">
+				<option value="+">Somar</option>
+				<option value="-">Subtrair</option>
+				<option value="/">Dividir</option>
+				<option value="*">Multiplicar</option>
+			</select>
+			
+			<input type="submit" value="Somar" />
+		</form>	
+	</body>
+</html>
